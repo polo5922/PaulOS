@@ -1,0 +1,54 @@
+@import "animation.css";
+
+:root {
+  --dark-blue: #071e22;
+  --blue: #1d7874;
+  --light-blue: #679289;
+  --peach: #f4c095;
+  --red: #ee2e31;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--blue);
+}
+
+.loader.active {
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo.loading {
+  height: 30% !important;
+  display: block;
+  animation: barrel-roll 2s infinite, fadeOut 5s;
+}
+
+#bottom_bar {
+  width: 100%;
+  height: 5%;
+  background-color: var(--dark-blue);
+  position: fixed;
+  bottom: 0;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.fade-out {
+  animation: fadeOut ease 5s;
+  -webkit-animation: fadeOut ease 5s;
+  -moz-animation: fadeOut ease 5s;
+  -o-animation: fadeOut ease 5s;
+  -ms-animation: fadeOut ease 5s;
+}
